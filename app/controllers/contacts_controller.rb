@@ -14,7 +14,6 @@ class ContactsController < ApplicationController
 
   # GET /contacts/new
   def new
-
     @contact = Contact.new
     options_for_select
   end
@@ -40,8 +39,9 @@ class ContactsController < ApplicationController
     end
   end
 
+  #FUNCTIONS ** 
   def options_for_select
-    @kind_options_for_select = Kind.all
+    @kind_options_for_select = Kind.first(1)
   end  
 
   # PATCH/PUT /contacts/1
