@@ -1,4 +1,6 @@
-<%= form_for(@phone) do |f| %>
+<%= form_for(@phone, html:{class:"basic-grey"} ) do |f| %>
+<h1>Phones</h1>
+
   <% if @phone.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@phone.errors.count, "error") %> prohibited this phone from being saved:</h2>
@@ -20,6 +22,6 @@
     <%= f.text_field :contact_id %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit("Enviar", class:"button") %>
   </div>
 <% end %>

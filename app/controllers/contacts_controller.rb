@@ -41,7 +41,7 @@ class ContactsController < ApplicationController
 
   #FUNCTIONS ** 
   def options_for_select
-    @kind_options_for_select = Kind.first(1)
+    @kind_options_for_select = Kind.all
   end  
 
   # PATCH/PUT /contacts/1
