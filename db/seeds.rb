@@ -7,9 +7,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 #gerando os tipos de kind 
-Kind.create!([{description: 'Amigo'}, {description: 'Contato'}, {description: 'Comercial'}])
 puts 'Gerando  tipos'
-
+Kind.create!([{description: 'Amigo'}, {description: 'Contato'}, {description: 'Comercial'}])
+puts 'Gerando  tipos [okx]'
 
 
 #rake db:drop db:create db:migrate db:seed

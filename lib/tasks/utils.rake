@@ -4,21 +4,24 @@ namespace :utils do
 
     #gerando os tipos de contatos 
     puts "gerando contatos"
-    Contact.create!(
-      name: Faker::Name.name, 
-      email: Faker::Internet.email, 
-      kind: Kind.all.sample, 
-      rmk: ".....1"
-      )
+    10.times do |i|
+      Contact.create!(
+        name: Faker::Name.name, 
+        email: Faker::Internet.email, 
+        kind: Kind.all.sample, 
+        rmk: ".....1"
+        )
+    end 
     puts 'Gerando  contatos [ok]'
 
     puts 'Gerando  enderecos'
     Contact.all.each do |contact|       
       Address.create!(
-      street:Faker::Address.street_name, 
-      city:Faker::Address.city, 
-      state:Faker::Address.state,
-      contact:Contact.all.sample)
+        street:Faker::Address.street_name, 
+        city:Faker::Address.city, 
+        state:Faker::Address.state,
+        contact: contact
+      )
       puts 'Gerando  enderecos [ok]'
     end 
 
