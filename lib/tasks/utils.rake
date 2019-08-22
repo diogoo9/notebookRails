@@ -3,16 +3,18 @@ namespace :utils do
   task seed: :environment do
 
     #gerando os tipos de contatos 
-    puts "gerando contatos"
+    
     10.times do |i|
+      puts "gerando contatos"
       Contact.create!(
         name: Faker::Name.name, 
         email: Faker::Internet.email, 
         kind: Kind.all.sample, 
-        rmk: ".....1"
+        rmk: LeroleroGenerator.sentence([1,2,3,4,5].sample)
         )
+        puts 'Gerando  contatos [ok]'
     end 
-    puts 'Gerando  contatos [ok]'
+    
 
     puts 'Gerando  enderecos'
     Contact.all.each do |contact|       

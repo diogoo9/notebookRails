@@ -2,3 +2,9 @@
   hello: 
     friend: "olá amigo"
   hi: "Olá" 
+  messages:
+    confirm: "deseja apagar ?"
+    listing: "Lista de "
+  buttons: 
+    new: "Novo"
+ 
