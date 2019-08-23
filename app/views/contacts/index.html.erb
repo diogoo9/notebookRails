@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
+<%= include_gon%>
 
+<%= @teste%>
 <h1> <%= "#{t("messages.listing")} #{@contacts.model.model_name.human(count: @contacts.size)}"%></h1>
 
 <table>
