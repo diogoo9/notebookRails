@@ -7,19 +7,22 @@
       adderss: 
         one: Endereço
         other: Endereços
+      phone:
+        one: Telefone
+        olher: Telefones
     attributes:
       contact:
-        name: "Nome"
-        email: "Email"
-        kind: "Tipo de contato"
-        kind_id: "Tipo de contato"
-        rmk: "Obs"
+        name: Nome
+        email: Email
+        kind: Tipo de contato
+        kind_id: Tipo de contato
+        rmk: Obs
       address:
-        street: "Rua"
-        City: "Cidade"
-        state: "Estado"
-        contact_id: "Contato"
-        contact: "Contato"
+        street: Rua
+        City: Cidade
+        state: Estado
+        contact_id: Contato
+        contact: Contato
      
     
      
