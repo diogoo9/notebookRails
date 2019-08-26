@@ -1,12 +1,12 @@
 class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
-
+  
   
   # GET /contacts
   # GET /contacts.json
   def index
     @contacts = Contact.all
-    gon.teste = "ok"     
+    gon.teste = "ok"  
   end
 
   # GET /contacts/1

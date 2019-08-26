@@ -1,17 +1,10 @@
-<h1>Seja Bem-vindo! </h1>
-<%= mostrar_nome %>
-<br>
-<%= t "hi" %>
+<div class="basic-grey">
+    <h1>Seja Bem-vindo <%= @nome%> !</h1>
 
-<br>
-<%= t "hello.friend" %> 
-
-<br>
-<h2><%= l Date.today %></h2>
-
-<ul>
-    <li><%= link_to 'Tipo', kinds_path %></li>
-    <li><%= link_to 'Contatos', contacts_path %></li>
-    <li><%= link_to 'endereco', addresses_path %></li>
-    <li><%= link_to 'Telelfones', phones_path %></li>
-</ul>
+    <ul>
+        <li><%= link_to 'Tipo', kinds_path %></li>
+        <li><%= link_to 'Contatos', contacts_path %></li>
+        <li><%= link_to 'endereco', addresses_path %></li>
+        <li><%= link_to 'Telelfones', phones_path %></li>
+    </ul>
+</div>
