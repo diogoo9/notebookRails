@@ -5,5 +5,6 @@ class Contact < ActiveRecord::Base
 
   accepts_nested_attributes_for :address
   #has_many plural
-  accepts_nested_attributes_for :phones
+  #reject_if para rejeitar o campo em branco do telefone e permitir apagar 
+  accepts_nested_attributes_for :phones, reject_if: :all_blank, allow_destroy: true
 end

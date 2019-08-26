@@ -23,6 +23,8 @@
         state: Estado
         contact_id: Contato
         contact: Contato
+      phone:
+        phone: Telefone
      
     
      

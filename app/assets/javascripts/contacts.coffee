@@ -6,10 +6,10 @@ javascript:
 coffee:
   $(document).ready ->
     name = user_name
-    alert name
+    #alert name
 
 jQuery ->
-    alert gon.teste
+   # alert gon.teste
 
 
-console.log("#{gon.teste}");
+#console.log("#{gon.teste}");

@@ -46,12 +46,13 @@
   <% end %>
 
   <!--Campos de telefones -->
-  <%= f.fields_for :phones do |phones_fields| %>
-    <div class="field">
-      <%= phones_fields.label :phone %>
-      <%= phones_fields.text_field :phone %>
-    </div>
-  <% end %>
+  <div class="phones">    
+    <%= f.fields_for :phones do |phones_fields| %>      
+      <!-- chamando a partial por conta da gem cocoon, locals = paramentros -->      
+      <%= render partial: "phone_fields", locals: {f: phones_fields}%>
+    <% end %>
+    <%= link_to_add_association('[Adicionar Telefone]', f, :phones) %>
+  </div>
 
 
   <div class="field">
