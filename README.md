@@ -1,4 +1,4 @@
-# projeto do curso de rails 
+# Projeto do curso de rails 
 
 ![ok](https://videosdeti.com.br/wp-content/uploads/2019/01/ror-4x-cover.png)
 
