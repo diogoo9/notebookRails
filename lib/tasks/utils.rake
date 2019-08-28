@@ -4,7 +4,7 @@ namespace :utils do
 
     #gerando os tipos de contatos 
     
-    10.times do |i|
+    100.times do |i|
       puts "gerando contatos"
       Contact.create!(
         name: Faker::Name.name, 
