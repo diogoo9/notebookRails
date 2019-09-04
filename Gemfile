@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
+# i18n for kaminari 
+gem 'kaminari-i18n'
 #O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum.
 gem 'lerolero_generator'
 #A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
